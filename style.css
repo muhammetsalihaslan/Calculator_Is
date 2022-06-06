@@ -11,6 +11,7 @@
 .bgc1{
     background-color: rgb(193, 190, 190);
     font-size:20px;
+    
 }
 
 .bgc2{
@@ -18,10 +19,12 @@
     color:white;
     font-size: 20px;
     
+    
 }
 
 .bgc3{
     background-color:rgb(113, 112, 112);
     color:white;
     font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
