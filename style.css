@@ -1,9 +1,27 @@
 .container{
-    height:35rem;
-    width: 18rem;
+    height:37rem;
+    width: 20rem;
     
 }
 
 .screen{
     height:10rem;
+}
+
+.bgc1{
+    background-color: rgb(193, 190, 190);
+    font-size:20px;
+}
+
+.bgc2{
+    background-color: rgb(246, 139, 9);
+    color:white;
+    font-size: 20px;
+    
+}
+
+.bgc3{
+    background-color:rgb(113, 112, 112);
+    color:white;
+    font-size: 20px;
 }
