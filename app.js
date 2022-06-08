@@ -3,6 +3,9 @@ const display = document.querySelector('.screen');
 const keys = document.querySelector('.container1');
 
 let displayValue = '0'; //screen de çıkacak değeri tanımladık başlangıç değeri 0
+let firstValue = null; // first value to given first value memory
+let operator = null; // for after first value memory 
+let secondValue = false; // for after second value memory if there is any second value  equals to true in a function 
 updateDisplay();
 
 function updateDisplay(){
@@ -18,7 +21,9 @@ keys.addEventListener('click', function(event){
    if (!element.matches('button')) return; // button olmayan elemanları çalıştırma  
   
    if (element.classList.contains('operator')){
-      console.log('operator', element.value);
+      // console.log('operator', element.value);
+      inputOperator(element.value);
+      updateDisplay();
       return;
    } // operatörlerin tanımlanması 
    
@@ -50,11 +55,11 @@ keys.addEventListener('click', function(event){
       return;
    } // decimal definition
    
-   if (element.classList.contains('equal')){
-      console.log('equal', element.value);
+   // if (element.classList.contains('equal')){
+   //    console.log('equal', element.value);
      
-      return;
-   } // equal  definition
+   //    return;
+   // } // equal  definition
 
    inputNumber(element.value);
    updateDisplay();
@@ -65,7 +70,14 @@ keys.addEventListener('click', function(event){
 //******** printing the values of the keys in the input part */
 
 function inputNumber(num){
-   displayValue = displayValue === '0' ? num: displayValue + num; //if display value equals to 0 write the number othervise write the other side by other number
+   if(secondValue){
+      displayValue = num;
+      secondValue = false;
+   } else{
+      displayValue = displayValue === '0' ? num: displayValue + num; //if display value equals to 0 write the number othervise write the other side by other number
+
+   }
+   console.log(displayValue, firstValue, operator, secondValue);
 }
 
 function inputDecimal(){
@@ -84,4 +96,41 @@ function inputNegative(){
 
 function inputPercentage(){
    displayValue = displayValue/100;
+}
+
+
+function inputOperator(nextOperator){
+   const value = parseFloat(displayValue);
+
+   if(operator  && secondValue){
+      operator = nextOperator;
+      return;
+   }
+
+   if (firstValue === null) {
+      firstValue = value;
+   } else if (operator){
+      const result = calculate(firstValue, value, operator);
+
+      displayValue = `${parseFloat(result.toFixed(2))}`;
+      firstValue = result;
+   }
+
+   secondValue = true;
+   operator = nextOperator;
+
+   console.log(displayValue, firstValue, operator, secondValue);
+}
+
+function calculate (first, second, operator){
+   if(operator === '+'){
+      return first + second;
+   } else if(operator === '-'){
+      return first - second;
+   } else if(operator === '*'){
+      return first * second;
+   } else if(operator === '/'){
+      return first / second;
+   }
+   return second;
 }
