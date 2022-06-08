@@ -1,6 +1,6 @@
 # Calculator_Is
 
-<a href="https://muhammetsalihaslan.github.io/Calculator_Is/">Click</a>here to try
+<a href="https://muhammetsalihaslan.github.io/Calculator_Is/">Click</a> here to try
  
 ## its a is calculator with js extention
 
