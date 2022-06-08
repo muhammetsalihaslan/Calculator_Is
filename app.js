@@ -30,12 +30,16 @@ keys.addEventListener('click', function(event){
    } // clear tanımlanması 
    
    if (element.classList.contains('negative')){
-      console.log('negative', element.value);
+      // console.log('negative', element.value);
+      inputNegative();
+      updateDisplay();
       return;
    } // to negative definition 
    
    if (element.classList.contains('percentage')){
-      console.log('percentage', element.value);
+      // console.log('percentage', element.value);
+      inputPercentage();
+      updateDisplay();
       return;
    } // opercentage definition
    
@@ -72,4 +76,12 @@ function inputDecimal(){
 
 function inputClear(){
    displayValue = '0';
+}
+
+function inputNegative(){
+   displayValue = displayValue*-1;
+}
+
+function inputPercentage(){
+   displayValue = displayValue/100;
 }
