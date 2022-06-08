@@ -127,7 +127,7 @@ function calculate (first, second, operator){
       return first + second;
    } else if(operator === '-'){
       return first - second;
-   } else if(operator === '*'){
+   } else if(operator === 'x'){
       return first * second;
    } else if(operator === '/'){
       return first / second;
