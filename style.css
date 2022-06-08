@@ -1,3 +1,5 @@
+
+
 .container{
     height:37rem;
     width: 20rem;
@@ -14,12 +16,19 @@
     
 }
 
+.bgc1:hover{
+    background-color:rgb(232, 229, 229);
+}
+
 .bgc2{
     background-color: rgb(246, 139, 9);
     color:white;
     font-size: 20px;
-    
-    
+}
+
+.bgc2:hover{
+    background-color:white;
+    color:rgb(246, 139, 9);
 }
 
 .bgc3{
@@ -28,3 +37,22 @@
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+
+.bgc3:hover{
+    background-color:rgb(159, 157, 157);
+}
+
+.white{
+    color:white;
+    font-size:30px;
+}
+
+.screen{
+    font-size:70px;
+    text-align: right;
+    color: white;
+    
+    
+    
+}
+

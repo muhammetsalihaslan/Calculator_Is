@@ -13,3 +13,7 @@ its a is calculator with js extention
 ## css
 
 1-Apart from the general css properties i copied the font named oswald from google fonts as an extra
+
+## js
+
+1- i made definition to run the screen and key part in js

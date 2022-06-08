@@ -16,72 +16,60 @@
 <body>
 <div class="container col-3 border border-2 border-dark rounded-5 mt-5 bg-dark">
     <div class="row mb-3">
-        <div class="screen col rounded p-5 m-1">
-            
-        </div>
+        <input type="number" class="screen  col rounded p-5 m-1 border bg-dark border-dark " disabled>
+          
+        </input>
     </div>
     <div class="container1">
-        <div class="row d-flex justify-content-center text-center mb-2">
-             <button class="bgc1 col border border-1 border-dark m-1 rounded-circle p-3">AC</button>
-             <button class="bgc1 col border border-1 border-dark m-1 rounded-circle p-3">+/-</button>
-             <button class="bgc1 col border border-1 border-dark m-1
-             rounded-circle p-3">%</button>
-             <button class="bgc2 col border border-1 border-dark m-1
-             rounded-circle p-3">÷</button>
+        <div class="container1 row d-flex justify-content-center text-center mb-2">
+             <button class="clear bgc1 col border border-1 border-dark m-1 rounded-circle p-3" value="clear">AC</button>
+             <button class="negative bgc1 col border border-1 border-dark m-1 rounded-circle p-3" value="negative" >+/-</button>
+             <button class="percentage bgc1 col border border-1 border-dark m-1
+             rounded-circle p-3 " value="percentage">%</button>
+             <button class="operator bgc2 col border border-1 border-dark m-1
+             rounded-circle p-3" value="/">÷</button>
          </div>
-        <div class="row d-flex justify-content-center text-center mb-2">
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">7</button>
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">8</button>
+        <div class="container1 row d-flex justify-content-center text-center mb-2">
+             <button class="bgc3 yedi col border border-1 border-dark m-1 rounded-circle p-3" value="7">7</button>
+             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3" value="8">8</button>
              <button class="bgc3 col border border-1 border-dark m-1
-             rounded-circle p-3">9</button>
-             <button class="bgc2 col border border-1 border-dark m-1
-             rounded-circle p-3">x</button>
+             rounded-circle p-3" value="9">9</button>
+             <button class="operator bgc2 col border border-1 border-dark m-1
+             rounded-circle p-3" value="x">x</button>
          </div>
-        <div class="row d-flex justify-content-center text-center mb-2">
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">4</button>
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">5</button>
+        <div class="container1 row d-flex justify-content-center text-center mb-2">
+             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3" value="4">4</button>
+             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3" value="5">5</button>
              <button class="bgc3 col border border-1 border-dark m-1
-             rounded-circle p-3">6</button>
-             <button class="bgc2 col border border-1 border-dark m-1
-             rounded-circle p-3">-</button>
+             rounded-circle p-3" value="6">6</button>
+             <button class="operator bgc2 col border border-1 border-dark m-1
+             rounded-circle p-3" value="-">–</button>
          </div>
-        <div class="row d-flex justify-content-center text-center mb-2">
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">1</button>
-             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3">2</button>
+        <div class="container1 row d-flex justify-content-center text-center mb-2">
+             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3" value="1">1</button>
+             <button class="bgc3 col border border-1 border-dark m-1 rounded-circle p-3" value="2">2</button>
              <button class="bgc3 col border border-1 border-dark m-1
-             rounded-circle p-3">3</button>
-             <button class="bgc2 col border border-1 border-dark m-1
-             rounded-circle p-3">+</button>
+             rounded-circle p-3" value="3">3</button>
+             <button class="operator bgc2 col border border-1 border-dark m-1
+             rounded-circle p-3" value="+" >+</button>
          </div>
-        <div class="row d-flex justify-content-center text-center mb-2">
-             <button class="bgc3 col-6 border border-1 border-dark m-1 rounded-pill p-3 text-start">0</button>
+        <div class="container1 row d-flex justify-content-center text-center mb-2">
+             <button class="bgc3 col-6 border border-1 border-dark m-1 rounded-pill p-3 text-start" value="0">0</button>
              
-             <button class="bgc3 col border border-1 border-dark m-1
-             rounded-circle p-3">,</button>
-             <button class="bgc2 col border border-1 border-dark m-1
-             rounded-circle p-3">=</button>
+             <button class="decimal bgc3 col border border-1 border-dark m-1
+             rounded-circle p-3" value=",">,</button>
+             <button class="equal bgc2 col border border-1 border-dark m-1
+             rounded-circle p-3" value="=">=</button>
          </div>
        
-        
-    </div>
+        </div>
        
-    
-    
-
-
-     
 </div>
 
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
